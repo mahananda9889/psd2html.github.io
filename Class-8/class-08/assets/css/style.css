@@ -1,0 +1,86 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+}
+body {
+	font-family: 'Lato', sans-serif;
+    color: #A58D8D;
+}
+a:hover { text-decoration: none }
+.section-title h2 {
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.section-padding {
+    padding: 50px 0;
+}
+.single-servicebg-1 {
+    background-image: url(../img/service-1.jpg);
+}
+.single-servicebg-2 {
+    background-image: url(../img/service-2.jpg);
+}
+.single-servicebg-3 {
+    background-image: url(../img/service-3.jpg);
+}
+.single-servicebg-4 {
+    background-image: url(../img/service-4.jpg);
+}
+
+.single-service-item {
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    background-color: #dd;
+}
+.single-service {
+	background: rgb(249, 249, 249) none repeat scroll 0 0;
+	padding: 10px 15px;
+    transition: .3s;
+}
+.single-service-info:hover {
+  box-shadow: 0 2px 6px #019231;
+}
+.single-btn {
+  border-radius: 50px;
+  color: #2ecc71;
+  display: inline-block;
+  padding: 10px 0px;
+  transition: .3s;
+}
+.single-btn:hover {
+  background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+}
