@@ -1,0 +1,112 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i,800');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+.project-bg-1 {background-image: url(../img/1.jpg)}
+.project-bg-2 {background-image: url(../img/2.jpg)}
+.project-bg-3 {background-image: url(../img/3.jpg)}
+.project-bg-4 {background-image: url(../img/4.jpeg)}
+.project-bg-5 {background-image: url(../img/5.jpg)}
+.project-bg-6 {background-image: url(../img/6.jpg)}
+.project-bg-7 {background-image: url(../img/7.jpg)}
+.project-bg-8 {background-image: url(../img/8.jpeg)}
+.project-bg-9 {background-image: url(../img/9.jpg)}
+
+
+.project-menu {
+    list-style: outside none none;
+    margin: 0 0 60px;
+    padding: 0;
+    text-align: center;
+}
+.project-menu li {
+    display: inline-block;
+    margin: 16px 25px 0;
+}
+.project-menu li {
+    font-weight: 700;
+}
+.project-menu li.active {
+    border-bottom: 2px solid #333;
+}
+.single-project-item {
+    background-color: #ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 300px;
+    margin: 0 0 30px;
+    width: 100%;
+}
+.project-item-hover {
+    display: table-cell;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.5);
+    transition: .3s;
+}
+.project-item-hover h4 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.7;
+    margin: 0;
+}
+.project-item-hover p {
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+.project-item-hover::before {
+    background: #333 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.single-project-item:hover .project-item-hover {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
