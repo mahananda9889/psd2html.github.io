@@ -1,0 +1,101 @@
+html, body{
+    height:100%;
+}
+.header-absoulte {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.header-absoulte .mainmenu li a {
+  color: #fff;
+    transition: .3s;
+}
+.header-absoulte .mainmenu li a:hover {
+    color: #06d6a0;
+}
+.single-slide-item::after {
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(26, 115, 238) 0%, rgb(24, 202, 248) 100%) repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.single-slide-item {
+  background-color: #ddd;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+    display: table;
+    width: 100%;
+    z-index: 1
+}
+.slide-bg-1 {background-image: url(../img/slider/slide-01.jpg)}
+.slide-bg-2 {background-image: url(../img/slider/slide-02.jpeg)}
+.slide-bg-3 {background-image: url(../img/slider/slide-03.jpg)}
+
+
+.single-item-wrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+.slide-content h2 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 70px;
+    margin: 0 0 35px;
+}
+.slide-content p {
+    line-height: 1.8;
+    margin: 0 0 32px;
+}
+.video-play-btn {
+    background: #06d6a0 none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    height: 60px;
+    line-height: 68px;
+    padding-left: 5px;
+    width: 60px;
+}
+.homepage-slides, .homepage-slides div {
+    height: 100%;
+}
+.homepage-slides div.single-item-wrapper, .homepage-slides div.single-item-wrapper div,  
+.homepage-slides div.owl-controls, .homepage-slides div.owl-controls div {
+    height: auto;
+}
+.homepage-slides .owl-nav div {
+  color: #fff;
+  font-size: 30px;
+  left: 50px;
+  line-height: 30px;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+    transition: .3s;
+}
+.homepage-slides .owl-nav div:hover {
+    color: #06d6a0;
+}
+.homepage-slides .owl-nav div.owl-next {
+    left: auto;
+    right: 50px;
+}
+.homepage-slides .owl-dots div {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  transition: all 0.3s ease 0s;
+  width: 10px;
+}
